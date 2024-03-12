@@ -4,8 +4,6 @@
 #include <string.h>
 #include <furi_hal.h>
 #include <gui/gui.h>
-#include <storage/storage.h>
-#include <storage/filesystem_api_defines.h>
 
 char* intToHex(int num) {
     // Check if the number is zero
