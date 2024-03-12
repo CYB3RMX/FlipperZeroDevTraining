@@ -1,0 +1,14 @@
+# For details & more options, see documentation/AppManifests.md in firmware repo
+
+App(
+    appid="ble_info",  # Must be unique
+    name="BLEInfo",  # Displayed in menus
+    apptype=FlipperAppType.EXTERNAL,
+    entry_point="bleapp_main",
+    stack_size=2 * 1024,
+    fap_category="Bluetooth",
+    fap_icon="template.png",  # 10x10 1-bit PNG
+    fap_author="CYB3RMX",
+    fap_weburl="https://github.com/CYB3RMX/FlipperZeroDevTraining",
+    fap_icon_assets="images",  # Image assets to compile for this application
+)
