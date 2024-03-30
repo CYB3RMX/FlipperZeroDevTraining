@@ -73,6 +73,7 @@ static void select_number_callback(Canvas* canvas, void* ctx) {
     canvas_draw_str(canvas, 45, 40, "Down: Decrease");
     canvas_draw_str(canvas, 45, 50, "OK: Select");
     app->screen_state = GuessScreenSelectNumber;
+    free(app->selected_number_str);
     furi_mutex_release(app->mutex);
 }
 static void get_number_callback(Canvas* canvas, void* ctx) {
